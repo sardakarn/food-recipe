@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Texas Recipes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add-edit-recipe.html">Add Recipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recipe-list.html">Recipe List</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <!-- NavBar Ends -->
+
+    <!-- Slider Section Starts -->
+    <section class="slider-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <h1>Welcome To Texas Food Recipes. Find your desired recipes here.</h1>
+                  <div class="buttons">
+                      <a class="btn btn-primary" href="add-edit-recipe.html">Add a Recipe</a>
+                      <a class="btn btn-secondary" href="recipe-list.html">View Recipe List</a>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="carousel-container">
+                      <div id="carouselExample" class="carousel slide">
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <img src="https://i.pinimg.com/736x/7e/ad/29/7ead29ec2d63a4008df4dd61bdfece83.jpg"
+                                      class="d-block w-100" alt="...">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Slider Section Ends -->
+
+  <!--Body Section Starts-->
+  <main>
+    <section id="recipe-list">
+        <div class="container">
+            <h1>Recipe List</h1>
+            <div class="row" id="recipe-list-container">
+                <!-- Recipe cards will be generated here -->
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

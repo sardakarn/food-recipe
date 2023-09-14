@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section#recipe-detail {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+      }
+
+      .recipe-card {
+        display: flex;
+      }
+
+      .recipe-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        flex: 1;
+      }
+
+      .recipe-details {
+        flex: 2;
+        padding-left: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+      }
+
+      .recipe-details h2 {
+        font-size: 1.5rem;
+      }
+
+      .recipe-details p {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+
+      .recipe-button {
+        display: block;
+        margin-top: 20px;
+      }
+    </style>
+    <title>Recipe Detail</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Texas Recipes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="add-edit-recipe.html">Add Recipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recipe-list.html">Recipe List</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <main>
+      <section id="recipe-detail">
+        <div class="container">
+          <h1>Recipe Detail</h1>
+          <div class="recipe-card">
+            <img src="recipe-image.jpg" alt="Recipe Image" class="recipe-image" />
+            <div class="recipe-details">
+              <h2>Recipe Title</h2>
+              <p>Ingredients: Lorem ipsum dolor sit amet...</p>
+              <p>Preparation Steps: Lorem ipsum dolor sit amet...</p>
+              <a href="#" class="recipe-button btn btn-primary">Back to Recipe List</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-body-tertiary text-center py-2">
+      &copy; 2023 Recipe Book
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

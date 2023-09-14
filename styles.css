@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    margin-right: 45%;
+    font-weight: bold;
+}
+
+.slider-section {
+    padding: 30px 0; 
+    background-color: #f3f4f6; 
+}
+
+.slider-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.buttons .btn {
+    text-transform: uppercase;
+}
+
+.carousel-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    border-radius: 20px;
+}
+
+.carousel-item img {
+    border-radius: 20px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Style the Recipe List section */
+#recipe-list {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Center the h1 title */
+#recipe-list h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Add space below the h1 title */
+}
+
+/* Style the recipe cards and add spacing between them */
+#recipe-list-container .col-md-4 {
+    margin-bottom: 20px; /* Add space below each card */
+}
+
+/* Style the recipe card title */
+#recipe-list-container .card-title {
+    font-size: 1.25rem; /* Adjust the font size of the card title */
+}
+
+/* Style the recipe card buttons */
+#recipe-list-container .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+#recipe-list-container .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style the Add/Edit Recipe section */
+#add-edit-recipe {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px; /* Add space above the section */
+    margin-bottom: 20px; /* Add space below the section */
+}
+
+/* Center the h1 title */
+#add-edit-recipe h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Add space below the h1 title */
+}
+
+/* Style the form labels */
+#recipe-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Add space below each label */
+}
+
+/* Style the form inputs */
+#recipe-form input[type="text"],
+#recipe-form textarea,
+#recipe-form input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Add space below each input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the form submit button */
+#recipe-form button[type="submit"] {
+    display: block;
+    margin: 0 auto; /* Center the button */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#recipe-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
