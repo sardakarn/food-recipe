@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
       body {
         background-color: #f8f9fa;
@@ -66,54 +61,61 @@
       }
     </style>
     <title>Recipe Detail</title>
-  </head>
-  <body>
+</head>
+<body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Texas Recipes</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="add-edit-recipe.html">Add Recipe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="recipe-list.html">Recipe List</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+            <a class="navbar-brand" href="index.html">Texas Recipes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add-edit-recipe.html">Add Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipe-list.html">Recipe List</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" id="recipe-search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="button" onclick="searchRecipes()">Search</button>
+                </form>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <main>
-      <section id="recipe-detail">
-        <div class="container">
-          <h1>Recipe Detail</h1>
-          <div class="recipe-card">
-            <img src="recipe-image.jpg" alt="Recipe Image" class="recipe-image" />
-            <div class="recipe-details">
-              <h2>Recipe Title</h2>
-              <p>Ingredients: Lorem ipsum dolor sit amet...</p>
-              <p>Preparation Steps: Lorem ipsum dolor sit amet...</p>
-              <a href="#" class="recipe-button btn btn-primary">Back to Recipe List</a>
+        <section id="recipe-detail">
+            <div class="container">
+                <h1>Recipe Detail</h1>
+                <!-- Dynamic recipe content will be displayed here -->
+                <div id="dynamic-recipe-content"></div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
-    <footer class="bg-body-tertiary text-center py-2">
-      &copy; 2023 Recipe Book
-    </footer>
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <p>&copy; 2023 Recipe Book</p>
+                  <p>&copy; Texas Recipes</p>
+              </div>
+              <div class="col-md-6">
+                  <ul class="social-icons">
+                      <li><a href="#"><i class="fab fa-facebook"></i></a> Facebook</li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a> Twitter</li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a> Instagram</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
